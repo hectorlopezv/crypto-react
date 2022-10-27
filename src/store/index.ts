@@ -10,7 +10,7 @@ export const useStore = create<
       (...a) => ({
         ...createAuthSlice(...a),
       }),
-      { name: "bound-store" }
+      { name: "global-store" }
     )
   )
 );

@@ -4,7 +4,7 @@ export interface AuthState {
   user?: LoginUserResponse;
   setUser: (user?: LoginUserResponse) => void;
 }
-export const createAuthSlice: StateCreator<AuthState> = (set) => ({
+export const createCoinBaseslice: StateCreator<AuthState> = (set) => ({
   user: undefined,
   setUser: (user?: LoginUserResponse) => set(() => ({ user: user })),
 });
